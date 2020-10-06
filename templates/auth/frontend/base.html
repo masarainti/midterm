@@ -1,0 +1,65 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/basecss.css' %}">
+    <script src="{% static 'js/basejs.js' %}"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="YJ">
+        <img src="{% static 'images/YJ.jpg' %}" alt="Yellow" style="width:250px;height: 400px;">
+        <div class="centered"><p id="YJ"></p></div>
+    </div>
+    <div class="GJ">
+        <img src="{% static 'images/GJ.jpg' %}" alt="Green" style="width:250px;height: 400px;">
+        <div class="centered"><p id="GJ"></p></div>
+    </div>
+    <div class="PJ">
+        <img src="{% static 'images/PJ.jpg' %}" alt="Poka" style="width:250px;height: 400px;">
+        <div class="centered"><p id="PJ"></p></div>
+    </div>
+    <div class="WJ">
+        <img src="{% static 'images/WJ.jpg' %}" alt="White" style="width:250px;height: 400px;">
+        <div class="centered"><p id="WJ"></p></div>
+    </div>
+    <footer class="fixed-bottom">
+        <form>
+            <div id="unicycle1" class="unicycle">
+                <input type="range" class="unicycle__wheel" name="unicycle" min="1" max="21" value="1" id="stage">
+                <div class="unicycle__marker">
+                    <div class="unicycle__rider-head"></div>
+                    <div class="unicycle__rider-body">
+                        <div class="unicycle__left-arm">
+                            <div class="unicycle__left-lower-arm"></div>
+                        </div>
+                        <div class="unicycle__right-arm">
+                            <div class="unicycle__right-lower-arm">
+                                <div class="unicycle__flag-pole">
+                                    <div class="unicycle__flag">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unicycle__left-leg">
+                            <div class="unicycle__left-lower-leg"></div>
+                        </div>
+                        <div class="unicycle__right-leg">
+                            <div class="unicycle__right-lower-leg"></div>
+                        </div>
+                    </div>
+                    <div class="unicycle__seat"></div>
+                    <div class="unicycle__bar"></div>
+                    <div class="unicycle__pedal-arms">
+                        <div class="unicycle__pedal"></div>
+                        <div class="unicycle__pedal"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </footer>
+</body>
+
+</html>
